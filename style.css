@@ -1,0 +1,175 @@
+:root {
+  /* COLORS */
+  --cherry: #260F26;
+  --grape: #251F47;
+  --kiwi: #404E7C;
+  /* FONTS */
+  --text: "Port Lligat Slab", serif;
+  --title: "Ubuntu", cursive;
+  font-size: 100%;
+}
+
+*, *::before, *::after {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: linear-gradient(#8fb1e1, #85904e);
+  background-image: url(images/Britton.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero:hover {
+    background-image: url(images/britton-water-tower.jpg);
+}
+
+.hero__title {
+  margin: 0 auto 300px;
+  color: white;
+  background-color: var(--cherry);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: var(--title);
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 7rem;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero__subtitle {
+  color: white;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  background-color: var(--grape);
+  font-family: var(--text);
+}
+
+/* ACTIVITIES SECTION */
+.activities__heading {
+  font-family: var(--title);
+  font-size: 1.75rem;
+}
+
+.activities__flexbox {
+  font-family: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee, .recreation, .movie {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-basis: 30%;
+  width: 150px;
+}
+
+.activity__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 8px solid transparent;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.coffee__img {
+  background: var(--cherry);
+}
+
+.movie__img {
+  background: var(--grape);
+}
+
+.recreation__img {
+  background: var(--kiwi);
+}
+
+.activity__heading {
+  font-size: 1.5rem;
+  font-family: var(--title);
+  margin: 0 0 10px 0;
+}
+
+.activity__text {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+/* GUIDE SECTION */
+.guide {
+  text-align: center;
+  width: 100%;
+	padding-top: 10px;
+  margin: 0 auto 3em;
+	background-color: #8fb1e1;
+}
+
+.guide__heading {
+  font-family: var(--title);
+  font-size: 2rem;
+  margin-top: 80px;
+}
+
+.guide__info {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.guide__img--container {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.guide__img {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  border: 10px solid transparent;
+  border-radius: 10px;
+  background-color: var(--kiwi);
+}
+
+.guide__textGroup {
+  flex-basis: 50%;
+  flex-grow: 3;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.guide__text {
+  width: 200px;
+  margin: 0 auto;
+  font-family: var(--text);
+  font-size: 1.125rem;
+}
+
+.guide__name {
+  font-family: var(--title);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .activities__flexbox {
+        flex-direction: row;
+    }
+}
